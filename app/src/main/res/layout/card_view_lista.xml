@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="3dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iv_icone"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:paddingRight="3dp"
+                android:paddingBottom="3dp"
+                android:src="@drawable/ic_launcher_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_nome_repositorio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Servico"
+                android:textColor="#040404"
+                android:textSize="15dip"
+                android:textStyle="bold"
+                android:typeface="sans"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_icone"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_estrela"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Orgao"
+                android:textColor="#343434"
+                android:textSize="10dip"
+                app:layout_constraintEnd_toEndOf="@+id/tv_nome_repositorio"
+                app:layout_constraintStart_toStartOf="@+id/tv_nome_repositorio"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nome_repositorio"/>
+
+            <TextView
+                android:id="@+id/tv_fork"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Orgao"
+                android:textColor="#343434"
+                android:textSize="10dip"
+                app:layout_constraintEnd_toEndOf="@+id/tv_estrela"
+                app:layout_constraintStart_toStartOf="@+id/tv_estrela"
+                app:layout_constraintTop_toBottomOf="@+id/tv_estrela"/>
+
+            <TextView
+                android:id="@+id/tv_nome_autor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Orgao"
+                android:textColor="#343434"
+                android:textSize="10dip"
+                app:layout_constraintEnd_toEndOf="@+id/tv_fork"
+                app:layout_constraintStart_toStartOf="@+id/tv_fork"
+                app:layout_constraintTop_toBottomOf="@+id/tv_fork"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
